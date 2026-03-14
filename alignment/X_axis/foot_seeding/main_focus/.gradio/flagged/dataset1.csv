@@ -1,0 +1,2 @@
+Input mesh (.ply),Ground plane JSON,voxel_size (leave blank to auto),ROI low fraction (low_frac),ROI high fraction (high_frac),Voxel target complexity (approx),Download results (zip),timestamp
+.gradio/flagged/Input mesh .ply)/222faaa3ab01df076b73/y_aligned.ply,.gradio/flagged/Ground plane JSON/bc1fbc1d69b978560d52/y_aligned.json,,0.05,0.25,200,,2025-12-07 17:37:00.469898

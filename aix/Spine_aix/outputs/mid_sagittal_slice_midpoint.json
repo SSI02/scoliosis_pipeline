@@ -1,0 +1,22 @@
+{
+  "method": "slice_midpoint",
+  "plane_equation": {
+    "normal": [
+      0.9999669314656322,
+      0.004101140507888096,
+      -0.007022579422282491
+    ],
+    "d": -0.003670685473109943
+  },
+  "point_on_plane": [
+    0.0036705640889212222,
+    1.5053996885487566e-05,
+    -2.5777680269133156e-05
+  ],
+  "bbox_diag": 0.9889346364238346,
+  "height_axis": 2,
+  "voxel_frac": 0.005,
+  "slice_thickness_frac": 0.01,
+  "timestamp": "2025-12-16T14:26:53.085934Z",
+  "notes": "Plane estimated via slice-wise left-right surface midpoints"
+}

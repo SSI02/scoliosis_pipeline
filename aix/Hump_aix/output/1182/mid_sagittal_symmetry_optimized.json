@@ -1,0 +1,22 @@
+{
+  "method": "symmetry_optimized",
+  "plane_equation": {
+    "normal": [
+      0.9989585374817848,
+      -0.044024491503523146,
+      0.011986848631311288
+    ],
+    "d": -0.005213768139657926
+  },
+  "point_on_plane": [
+    0.005208338195561808,
+    -0.00022953349116571007,
+    6.249664948883302e-05
+  ],
+  "bbox_diag": 0.9889346364238346,
+  "height_axis": 2,
+  "voxel_frac": 0.005,
+  "slice_thickness_frac": 0.01,
+  "timestamp": "2025-12-16T14:26:59.316081Z",
+  "notes": "Plane optimized via reflection symmetry with trimmed NN loss"
+}

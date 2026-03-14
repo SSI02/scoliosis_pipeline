@@ -1,0 +1,62 @@
+[17:21:42] [SUCCESS] Continuing pipeline after manual alignment...
+[17:21:42] [STAGE] ==================================================
+[17:21:42] [STAGE] STAGE 9-10/10: AIX ESTIMATION
+[17:21:42] [STAGE] ==================================================
+[17:21:42] [INFO] Environment: vv_aix
+[17:21:42] [INFO] Using mesh: near_aligned_centered.ply
+[17:21:42] [PROGRESS] Running Hip AIX...
+[17:21:42] [PROGRESS] Running: /home/shikhar/Shikhar/pipeline_fast_changes/aix/Hip_aix/hip_aix_bend.py...
+[17:21:42] [WARNING]   stderr: File "/home/shikhar/Shikhar/pipeline_fast_changes/aix/Hip_aix/hip_aix_bend.py", line 422
+[17:21:42] [WARNING]   stderr:     verticalalignment='top', bbox=props)
+[17:21:42] [WARNING]   stderr: IndentationError: unexpected indent
+[17:21:42] [ERROR] Hip AIX failed:   File "/home/shikhar/Shikhar/pipeline_fast_changes/aix/Hip_aix/hip_aix_bend.py", line 422
+    verticalalignment='top', bbox=props)
+IndentationError: unexpected indent
+
+[17:21:42] [PROGRESS] Running Spine AIX...
+[17:21:42] [PROGRESS] Running: /home/shikhar/Shikhar/pipeline_fast_changes/aix/Spine_aix/spine_aix.py...
+[17:21:45] [INFO]   stdout: [OK] 2D Visualization saved to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20
+[17:21:45] [INFO]   stdout: Optimized plane normal: [ 0.96044235 -0.27165537  0.06126871] d: -0.004877140678714376
+[17:21:45] [INFO]   stdout: Optimization success: True CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH
+[17:21:45] [INFO]   stdout: [OK] Detailed stats saved to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_2026
+[17:21:45] [INFO]   stdout: [OK] 2D Visualization saved to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20
+[17:21:45] [SUCCESS] Spine AIX completed
+[17:21:45] [INFO] Using midline: near_aligned_centered_mid_sagittal_symmetry_optimized.json
+[17:21:45] [FILE] Saved 4 file(s) to Spine_aix folder
+[17:21:45] [PROGRESS] Running Hump AIX...
+[17:21:45] [PROGRESS] Running: /home/shikhar/Shikhar/pipeline_fast_changes/aix/Hump_aix/hump_aix.py...
+[17:21:49] [INFO]   stdout:   [Blue Plane]  : Ground Plane
+[17:21:49] [INFO]   stdout:   [Red Points]  : Thoracic ROI
+[17:21:49] [INFO]   stdout: ========================================
+[17:21:49] [INFO]   stdout: Done. Outputs: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_
+[17:21:49] [INFO]   Volume asymmetry index: 0.0943
+[17:21:49] [INFO]   Dot(n_hump, n_Y): -0.9979
+[17:21:49] [INFO]   Hump plane vs back normal angle (deg): 3.71
+[17:21:49] [INFO]   Saved Ridge Comparison to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_ridge_comparison.png
+[17:21:49] [INFO]   Saved Symmetry Heatmap to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_symmetry_heatmap.png
+[17:21:49] [INFO]   Saved Plane Fit Debug to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_plane_fit_debug.png
+[17:21:49] [INFO]   Saved Hump Selection Top View to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_hump_selection_top_view.png
+[17:21:49] [INFO]   Saved Ridge Comparison to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_ridge_comparison.png
+[17:21:49] [INFO]   Saved Symmetry Heatmap to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_symmetry_heatmap.png
+[17:21:49] [INFO]   Saved Plane Fit Debug to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_plane_fit_debug.png
+[17:21:49] [INFO]   Done. Outputs: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_depth_map.png, /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/Hump_aix/hump_ridge_lines.png
+[17:21:49] [FILE] Saved 9 file(s) to Hump_aix folder
+[17:21:49] [SUCCESS] Hump AIX completed
+[17:21:49] [PROGRESS] Computing final SSI (Scoliosis Severity Index) score...
+[17:21:49] [ERROR] Cannot compute SSI_score: hip stats JSON not found.
+[17:21:49] [INFO] Loading hump metrics from: hump_rib_hump_stats.json
+[17:21:49] [WARNING] Skipping S_D (trunk shift score) – missing dx_raw or spine_length.
+[17:21:49] [ERROR] Insufficient components to compute full SSI_score.
+[17:21:49] [FILE] Saved final scoliosis score to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/near_aligned_centered_final_scoliosis_score.json
+[17:21:49] [SUCCESS] SSI_score JSON saved: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945/08_aix_results/near_aligned_centered_final_scoliosis_score.json
+[17:21:49] [INFO] 
+[17:21:49] [INFO] ============================================================
+[17:21:49] [SUCCESS] PIPELINE COMPLETED SUCCESSFULLY
+[17:21:49] [INFO] ============================================================
+[17:21:49] [INFO] Results saved to: /home/shikhar/Shikhar/pipeline_fast_changes/working_directory/run_20260218_171945
+[17:21:49] [INFO] 
+[17:21:49] [INFO] Output files in AIX results:
+[17:21:49] [FILE]   Spine_aix
+[17:21:49] [FILE]   Hump_aix
+[17:21:49] [FILE]   Hip_aix
+[17:21:49] [FILE]   near_aligned_centered_final_scoliosis_score.json

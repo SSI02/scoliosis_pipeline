@@ -1,0 +1,7 @@
+numpy>=1.23.0
+scipy>=1.10.0
+scikit-image>=0.20.0
+scikit-learn>=1.2.0
+open3d>=0.17.0
+gradio>=3.47.1
+plotly>=5.15.0
